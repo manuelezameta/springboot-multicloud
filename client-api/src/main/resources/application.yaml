@@ -2,15 +2,5 @@ spring:
   application:
     name: client-api
 
-  devtools:
-    restart:
-      enabled: true
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,metrics
-
-server:
-  port: 8088
+  profiles:
+    active: dev
